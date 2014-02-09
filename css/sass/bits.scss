@@ -1,0 +1,76 @@
+///Variables 
+$v8: 1000px;
+$v6: 800px;
+$i4: 540px;
+$navfont: 'SourceSansProLight', helvetica, arial, sans-serif;
+$mainfont: 'SourceSansProRegular' helvetica, arial, sans-serif;
+$mainfont2: 'SourceSansProBold';
+$navbg: #262626;
+/// Mixins 
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin flexflow($flowvalue) {
+	-webkit-flex-flow: $flowvalue;
+	-moz-flex-flow: $flowvalue;
+	-ms-flex-flow: $flowvalue;
+	flex-flow: $flowvalue;
+}
+
+@mixin justify($justifyval) {
+	-webkit-justify-content: $justifyval;
+	-moz-justify-content: $justifyval;
+	justify-content: $justifyval;
+}
+@mixin align-self($alignself) {
+	-webkit-align-self: $alignself;
+	-moz-align-self: $alignself;
+	-ms-align-self: $alignself;
+	align-self: $alignself;
+}
+
+@mixin trans ($prop, $time) {
+  -webkit-transition: $prop, $time;
+  -moz-transition: $prop, $time;
+  -ms-transition: $prop, $time;
+  -o-transition: $prop, $time;
+  transition: $prop, $time;
+
+}
+
+
+/// Linking all .scss together 
+
+
+@media screen and (min-width: $i4) {
+	
+}
+
+@media screen and (min-width: $v6) {
+	
+}
+
+@media screen and (min-width: $v8) {
+
+}

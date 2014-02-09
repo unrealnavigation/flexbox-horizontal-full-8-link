@@ -1,0 +1,53 @@
+////Flex - Float Nav
+
+ul.float-flex {
+	width: 100%;
+	margin: .5em 0 2em;
+	float: left;
+	
+	li {
+		float: left;
+		width: 95%;
+		background: #222;
+		margin: .25em 2.5%;
+		
+		a:link, a:visited {
+			width: 100%;
+			text-decoration: none;
+			text-align: center;
+			padding: .75em 0;
+			display: block;
+			color: #fff;
+			font-family: $navfont;
+			  -webkit-transition: color, background, .5s;
+			  -moz-transition: color, background, .5s;
+			  -ms-transition: color, background, .5s;
+			  -o-transition: color, background, .5s;
+			  transition: color, background, .5s;
+		}
+		
+		a:hover, a:active, a:focus {
+			background: #333;
+			color: #00ff16;
+		}
+		
+	}
+	
+	
+}
+
+
+@media screen and (min-width: $i4) {
+	ul.float-flex li {
+		width: 45%;
+	}
+		
+}
+
+@media screen and (min-width: $v6) {
+	
+}
+
+@media screen and (min-width: $v8) {
+
+}
